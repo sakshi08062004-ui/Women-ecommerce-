@@ -108,15 +108,3 @@ women-ecommerce/
 
 
 ---
-
-##  CI/CD Pipeline (GitHub Actions)
-
-This repository includes an automated CI/CD pipeline configured at `.github/workflows/ci-cd.yml`:
-
-1. **Continuous Integration (CI):**
-   - Automatically triggered on every `git push` or `pull request` to `main` or `master`.
-   - Runs syntax linting (`php -l`) across all PHP files to catch errors early.
-   - Builds the Docker image and tests container startup via Docker Compose.
-
-2. **Continuous Deployment (CD):**
-   - On pushes to `main`, optionally pushes the tested Docker image to Docker Hub (if repository secrets `DOCKER_USERNAME` and `DOCKER_PASSWORD` are configured in GitHub Settings -> Secrets).
