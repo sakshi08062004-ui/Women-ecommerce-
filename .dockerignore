@@ -1,0 +1,13 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+.idea
+.vscode
+*.log
+scratch/
+test_fetch.php
+apply_image_updates.php
+update_lehenga_cat.php
+
