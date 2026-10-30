@@ -1,23 +1,15 @@
-name: CI/CD Pipeline
+name: CI/CD
 
 on: [push]
 
 jobs:
-  test-and-build:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. કોડ ડાઉનલોડ કરો
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # 2. બધી PHP ફાઇલોમાં એરર ચેક કરો
-      - name: Test PHP Code
-        run: |
-          for file in $(find . -name "*.php"); do
-            php -l "$file"
-          done
+      - name: Check PHP Code
+        run: find . -name "*.php" -exec php -l {} +
 
-      # 3. Docker Image બનાવીને ચેક કરો
-      - name: Build Docker Image
-        run: docker build -t women-ecommerce:latest .
+      - name: Build Docker
+        run: docker build -t my-app .
