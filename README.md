@@ -6,7 +6,7 @@ A clean, standalone, lightweight B2C women's fashion e-commerce web application 
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option 1: Run with XAMPP Apache (Recommended)
 Because the project is located in `C:\xampp\htdocs\women-ecommerce`:
@@ -38,7 +38,7 @@ docker compose down
 
 ---
 
-## 🔑 Login Credentials
+##  Login Credentials
 
 ### 1. Administrator
 * **Email:** `admin@gmail.com`
@@ -52,7 +52,7 @@ docker compose down
 
 ---
 
-## 🗄️ Database Setup (MySQL / phpMyAdmin)
+##  Database Setup (MySQL / phpMyAdmin)
 The database is configured in `config/db.php`:
 * **Host:** `127.0.0.1` (Port: `3306`)
 * **Database Name:** `women_ecommerce`
@@ -66,7 +66,7 @@ If you ever need to re-import the database into phpMyAdmin:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 women-ecommerce/
@@ -109,7 +109,7 @@ women-ecommerce/
 
 ---
 
-## 🔄 CI/CD Pipeline (GitHub Actions)
+##  CI/CD Pipeline (GitHub Actions)
 
 This repository includes an automated CI/CD pipeline configured at `.github/workflows/ci-cd.yml`:
 
